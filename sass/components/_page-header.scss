@@ -1,0 +1,97 @@
+/* Header */
+
+.header {
+	border-bottom: 1px solid $header-border-color;
+}
+
+/* Navigation */
+
+.nav-menu,
+.address-menu {
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+}
+
+.navigation--margin-left {
+	margin-left: 93px;
+}
+
+.address-menu {
+	margin-left: auto;
+}
+
+/* Methods for selecting elements for cleaning extreme geometry */
+/*  */
+
+.nav-menu__item:not(:last-child) {
+	margin-right: 50px;
+}
+
+/* .nav-menu__item + .nav-menu__item {
+		margin-left: 50px;
+	} */
+
+/* .nav-menu__item:last-child {
+		margin-right: 0;
+	} */
+
+.nav-menu__link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	color: $prime-color;
+	transition: color $time-cubic;
+
+	&:hover, &:focus {
+		color: $active-color;
+	}
+}
+
+.nav-menu__link--active {
+	position: relative;
+	color: $active-color;
+}
+
+.nav-menu__link--active::after {
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	content: "";
+	width: 100%;
+	height: 4px;
+	border-radius: 2px;
+	background-color: $active-color;
+}
+
+.address-menu__item:last-child {
+	margin-left: 50px;
+}
+
+.icon-letter {
+	width: 16px;
+	height: 12px;
+	fill: currentColor;
+	margin-right: 10px;
+}
+
+.icon-phone {
+	width: 10px;
+	height: 16px;
+	fill: currentColor;
+	margin-right: 10px;
+}
+
+.address-menu__link {
+	display: inline-flex;
+	align-items: center;
+	color: $grey-text;
+	transition: color $time-cubic;
+
+	&:hover, &:focus {
+		color: $active-color;
+	}
+}

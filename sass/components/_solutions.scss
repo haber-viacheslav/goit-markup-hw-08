@@ -1,0 +1,55 @@
+/* Solutions section */
+
+.solutions {
+	padding-top: 200px;
+	padding-bottom: 200px;
+	text-align: center;
+}
+
+.overlay {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1600px;
+	height: 600px;
+	background-color: $prime-color;
+	background-image: $hero-gradient, url(../images/background/hero-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.solutions__title {
+	max-width: 696px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: $prime-white;
+}
+
+.solutions__btn {
+	display: inline-block;
+	padding: 10px 32px;
+	min-width: 200px;
+	text-align: center;
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.06em;
+	color: $prime-white;
+	background-color: $active-color;
+	box-shadow: $solution-btn-shadow;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color $time-cubic;
+
+	&:hover, &:focus {
+		background-color: $btn-accent-color;
+	}
+}

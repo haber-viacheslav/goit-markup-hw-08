@@ -1,0 +1,33 @@
+/* Our Team section */
+
+.team {
+	background-color: $second-bg-color;
+}
+
+.team__members {
+	text-align: center;
+}
+
+.team__member {
+	background-color: $prime-white;
+	box-shadow: $team-member-shadow;
+	border-radius: 0px 0px 4px 4px;
+}
+
+.member__content {
+	padding: 30px;
+}
+
+.member__title {
+	margin-bottom: 10px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+}
+
+.member__position {
+	margin-bottom: 16px;
+	font-size: 16px;
+	line-height: 1.19;
+	color: $grey-text;
+}
