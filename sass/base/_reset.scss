@@ -1,13 +1,9 @@
-
 body {
 	font-family: $main-font;
 	font-size: 14px;
 	color: $prime-color;
 	letter-spacing: 0.03em;
 }
-
-
-
 
 /* reset */
 
@@ -25,21 +21,14 @@ ul {
 
 img {
 	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 /* Utils */
 
 .no-scroll {
 	overflow: hidden;
-}
-
-.link {
-	text-decoration: none;
-	font-family: inherit;
-}
-
-.list {
-	list-style: none;
 }
 
 /* Hidden */

@@ -11,6 +11,10 @@
 	transition: opacity $time-cubic visibility $time-cubic;
 	z-index: 3;
 	visibility: visible;
+	@media screen and (max-width: ($tablet - 1px)) {
+		overflow-y: scroll;
+		padding: 93px 15px;
+	}
 }
 
 .is-hidden {

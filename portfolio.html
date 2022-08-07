@@ -19,29 +19,34 @@
 
 		<header class="header">
 			<div class="container container--flex">
-				<a class="logo link" lang="en" href="./index.html">
-					Web<span class="logo--mode-light">Studio</span>
+				<a class="logo" lang="en" href="./index.html">
+					Web
+					<span class="logo--mode-light">Studio</span>
 				</a>
+				<button class="mobile-btn" type="button">
+					<svg width="40" height="40">
+						<use href="./images/icons.svg#icon-menu"></use>
+						<use href="./images/icons.svg#icon-menu-close"></use>
+					</svg>
+				</button>
 
 				<nav class="navigation navigation--margin-left">
-					<ul class="nav-menu list">
+					<ul class="nav-menu">
 						<li class="nav-menu__item">
-							<a class="nav-menu__link link" href="./index.html">Студія</a>
+							<a class="nav-menu__link" href="./index.html">Студія</a>
 						</li>
 						<li class="nav-menu__item">
-							<a class="nav-menu__link link nav-menu__link--active" href="./portfolio.html">
-								Портфоліо
-							</a>
+							<a class="nav-menu__link nav-menu__link--active" href="./portfolio.html">Портфоліо</a>
 						</li>
 						<li class="nav-menu__item">
-							<a class="nav-menu__link link" href="#contacts">Контакти</a>
+							<a class="nav-menu__link" href="#contacts">Контакти</a>
 						</li>
 					</ul>
 				</nav>
 
-				<ul class="address-menu list">
+				<ul class="address-menu">
 					<li class="address-menu__item">
-						<a class="address-menu__link link" href="mailto:info@devstudio.com" aria-label="e-mail">
+						<a class="address-menu__link" href="mailto:info@devstudio.com" aria-label="e-mail">
 							<svg class="icon-letter" width="16" height="12">
 								<use href="./images/icons.svg#icon-letter"></use>
 							</svg>
@@ -49,7 +54,7 @@
 						</a>
 					</li>
 					<li class="address-menu__item">
-						<a class="address-menu__link link" href="tel:+380961111111" aria-label="phone number">
+						<a class="address-menu__link" href="tel:+380961111111" aria-label="phone number">
 							<svg class="icon-phone" width="10" height="16">
 								<use href="./images/icons.svg#icon-smartphone"></use>
 							</svg>
@@ -69,7 +74,7 @@
 				<div class="container">
 					<!--Hiden title-->
 					<h1 class="visually-hidden">Portfolio</h1>
-					<ul class="work__btn-list list">
+					<ul class="work__btn-list">
 						<li class="work__btn-item">
 							<button type="button" class="work__btn active-btn">Все</button>
 						</li>
@@ -84,7 +89,7 @@
 							<button type="button" class="work__btn">Маркетинг</button>
 						</li>
 					</ul>
-					<ul class="work-list list">
+					<ul class="work-list">
 						<li class="work-list__item">
 							<a class="work-list__link link" href="">
 								<div class="work-list__thumb">
@@ -136,7 +141,7 @@
 							</a>
 						</li>
 						<li class="work-list__item">
-							<a class="work-list__link link" href="">
+							<a class="work-list__link" href="">
 								<div class="work-list__thumb">
 									<img
 										class="work-list__img"
@@ -161,7 +166,7 @@
 							</a>
 						</li>
 						<li class="work-list__item">
-							<a class="work-list__link link" href="">
+							<a class="work-list__link" href="">
 								<div class="work-list__thumb">
 									<img
 										class="work-list__img"
@@ -211,7 +216,7 @@
 							</a>
 						</li>
 						<li class="work-list__item">
-							<a class="work-list__link link" href="">
+							<a class="work-list__link" href="">
 								<div class="work-list__thumb">
 									<img
 										class="work-list__img"
@@ -236,7 +241,7 @@
 							</a>
 						</li>
 						<li class="work-list__item">
-							<a class="work-list__link link" href="">
+							<a class="work-list__link" href="">
 								<div class="work-list__thumb">
 									<img
 										class="work-list__img"
@@ -261,7 +266,7 @@
 							</a>
 						</li>
 						<li class="work-list__item">
-							<a class="work-list__link link" href="">
+							<a class="work-list__link" href="">
 								<div class="work-list__thumb">
 									<img
 										class="work-list__img"
@@ -286,7 +291,7 @@
 							</a>
 						</li>
 						<li class="work-list__item">
-							<a class="work-list__link link" href="">
+							<a class="work-list__link" href="">
 								<div class="work-list__thumb">
 									<img
 										class="work-list__img"
@@ -316,30 +321,28 @@
 		</main>
 
 		<!-- Footer -->
-
 		<footer class="footer">
 			<div class="container container--flex-baseline">
 				<div class="footer__wrp">
-					<a class="footer__logo logo link" lang="en" href="./index.html">
-						Web<span class="logo--mode-dark">Studio</span>
+					<a class="footer__logo logo" lang="en" href="./index.html">
+						Web
+						<span class="logo--mode-dark">Studio</span>
 					</a>
 					<address id="contacts">
 						<a
-							class="footer__street-address link"
+							class="footer__street-address"
 							href="https://goo.gl/maps/Z6sbrhyPWb495Rzy5"
 							target="blank_"
 							rel="noopener nofollow noreferrer"
 						>
-						м. Київ, пр-т Лесі Українки, 26
+							м. Київ, пр-т Лесі Українки, 26
 						</a>
 						<ul class="footer-menu">
 							<li class="footer-menu__item">
-								<a class="footer-menu__link link" href="mailto:info@example.com">
-									info@example.com
-								</a>
+								<a class="footer-menu__link" href="mailto:info@example.com">info@example.com</a>
 							</li>
 							<li class="footer-menu__item">
-								<a class="footer-menu__link link" href="tel:+380991111111">+38 099 111 11 11</a>
+								<a class="footer-menu__link" href="tel:+380991111111">+38 099 111 11 11</a>
 							</li>
 						</ul>
 					</address>
@@ -352,7 +355,7 @@
 								href="https://www.instagram.com/"
 								target="_blank"
 								rel="noopener norefferer"
-								class="social__link social__link--mode-dark link"
+								class="social__link social__link--mode-dark"
 								aria-label="instagram"
 							>
 								<svg class="social__icon" width="20" height="20">
@@ -365,7 +368,7 @@
 								href="https://twitter.com/"
 								target="_blank"
 								rel="noopener norefferer"
-								class="social__link social__link--mode-dark link"
+								class="social__link social__link--mode-dark"
 								aria-label="twitter"
 							>
 								<svg class="social__icon" width="20" height="20">
@@ -378,7 +381,7 @@
 								href="https://www.facebook.com/"
 								target="_blank"
 								rel="noopener norefferer"
-								class="social__link social__link--mode-dark link"
+								class="social__link social__link--mode-dark"
 								aria-label="facebook"
 							>
 								<svg class="social__icon" width="20" height="20">
@@ -391,7 +394,7 @@
 								href="https://www.linkedin.com/"
 								target="_blank"
 								rel="noopener norefferer"
-								class="social__link social__link--mode-dark link"
+								class="social__link social__link--mode-dark"
 								aria-label="linkedin"
 							>
 								<svg class="social__icon" width="20" height="20">
@@ -405,7 +408,7 @@
 					<h3 class="footer-form__title">Підпишіться на розсилку</h3>
 					<div class="footer-form__wrp">
 						<input class="footer-form__email" type="email" name="email" placeholder="E-mail" />
-						<button class="form-btn footer-form__btn" type="submit">
+						<button class="footer-form__btn" type="submit">
 							Підписатися
 							<svg class="footer-form__btn-icon" width="24" height="24">
 								<use href="./images/icons.svg#icon-send"></use>

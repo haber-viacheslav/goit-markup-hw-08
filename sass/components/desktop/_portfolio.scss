@@ -3,6 +3,7 @@
 /* Filter buttons */
 
 .work__btn-list {
+	@extend %list;
 	display: flex;
 	gap: 8px;
 	margin-bottom: 50px;
@@ -24,13 +25,13 @@
 	border: none;
 	cursor: pointer;
 	transition: color $time-cubic, background-color $time-cubic, box-shadow $time-cubic;
-	
-	&:hover, &:focus {
+
+	&:hover,
+	&:focus {
 		color: $prime-white;
 		background-color: $active-color;
 		box-shadow: $work-btn-shadow;
 	}
-	
 }
 
 .active-btn {
@@ -38,24 +39,27 @@
 	background-color: $active-color;
 }
 
-
 /* Cards */
 
 .work-list {
+	@extend %list;
 	display: flex;
 	gap: 30px;
 	flex-wrap: wrap;
 }
 
 .work-list__item {
-	flex-basis: calc((100% - 60px) / 3);
+	@include flex-calc;
+	// flex-basis: calc((100% - 60px) / 3;
 }
 
 .work-list__link {
+	@extend %link;
 	display: block;
 	transition: box-shadow $time-cubic;
 
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		box-shadow: $work-list-shadow;
 	}
 }
@@ -76,7 +80,8 @@
 	transform: translateY(0);
 	transition: transform $time-cubic;
 
-	.work-list__link:hover &, .work-list__link:focus & {
+	.work-list__link:hover &,
+	.work-list__link:focus & {
 		transform: translateY(-100%);
 	}
 }

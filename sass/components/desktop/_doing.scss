@@ -1,10 +1,9 @@
 /* Doing section */
 
-.doing__items,
-.team__members {
-	display: flex;
-	gap: 30px;
-	align-items: center;
+.doing {
+	@media screen and (max-width: ($desktop - 1px)) {
+		display: none;
+	}
 }
 
 .doing__thumb {

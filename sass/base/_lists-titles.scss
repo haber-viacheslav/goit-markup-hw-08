@@ -7,8 +7,9 @@
 .doing__items,
 .team__members,
 .clients__items {
+	@extend %list;
 	display: flex;
-	gap: 30px;
+	gap: $indent;
 	align-items: center;
 }
 
