@@ -11,6 +11,8 @@
 	border-radius: 4px;
 	opacity: 1;
 	z-index: 4;
+	left: 50%;
+	transform: translate(-50%);
 
 	@media screen and (min-width: $tablet) {
 		position: absolute;
@@ -19,6 +21,10 @@
 		transform: translate(-50%, -50%) scale(1);
 		max-width: 528px;
 		max-height: 581px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: 100%;
 	}
 }
 

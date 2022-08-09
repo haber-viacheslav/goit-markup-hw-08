@@ -4,14 +4,21 @@
 	background-color: $second-bg-color;
 }
 
-.team__members {
-	text-align: center;
-}
-
 .team__member {
+	@include flex-calc($indent, $elements: 1);
+	text-align: center;
 	background-color: $prime-white;
 	box-shadow: $team-member-shadow;
 	border-radius: 0px 0px 4px 4px;
+
+	@media screen and (min-width: $tablet) {
+		@include flex-calc($indent, $elements: 2);
+	}
+
+	@media screen and (min-width: $desktop) {
+		@include flex-calc($indent, $elements: 4);
+	}
+
 }
 
 .member__content {

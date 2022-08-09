@@ -18,50 +18,113 @@
 		<!-- Header -->
 
 		<header class="header">
-			<div class="container container--flex">
-				<a class="logo" lang="en" href="./index.html">
-					Web
-					<span class="logo--mode-light">Studio</span>
-				</a>
-				<button class="mobile-btn" type="button">
-					<svg width="40" height="40">
-						<use href="./images/icons.svg#icon-menu"></use>
-						<use href="./images/icons.svg#icon-menu-close"></use>
-					</svg>
-				</button>
+			<div class="container">
+				<div class="container-mobile container--flex">
+					<a class="logo" lang="en" href="./index.html">
+						Web<span class="logo--mode-light">Studio</span>
+					</a>
 
-				<nav class="navigation navigation--margin-left">
-					<ul class="nav-menu">
-						<li class="nav-menu__item">
-							<a class="nav-menu__link" href="./index.html">Студія</a>
-						</li>
-						<li class="nav-menu__item">
-							<a class="nav-menu__link nav-menu__link--active" href="./portfolio.html">Портфоліо</a>
-						</li>
-						<li class="nav-menu__item">
-							<a class="nav-menu__link" href="#contacts">Контакти</a>
-						</li>
-					</ul>
-				</nav>
+					<button
+						class="mobile-btn"
+						type="button"
+						data-menu-button
+						aria-expanded="false"
+						aria-controls="mobile-menu"
+					>
+						<svg width="40" height="40" aria-label="Перемикач мобільного меню">
+							<use class="mobile-btn__icon-menu" href="./images/icons.svg#icon-menu"></use>
+							<use class="mobile-btn__icon-close" href="./images/icons.svg#icon-menu-close"></use>
+						</svg>
+					</button>
 
-				<ul class="address-menu">
-					<li class="address-menu__item">
-						<a class="address-menu__link" href="mailto:info@devstudio.com" aria-label="e-mail">
-							<svg class="icon-letter" width="16" height="12">
-								<use href="./images/icons.svg#icon-letter"></use>
-							</svg>
-							info@devstudio.com
-						</a>
-					</li>
-					<li class="address-menu__item">
-						<a class="address-menu__link" href="tel:+380961111111" aria-label="phone number">
-							<svg class="icon-phone" width="10" height="16">
-								<use href="./images/icons.svg#icon-smartphone"></use>
-							</svg>
-							+38 096 111 11 11
-						</a>
-					</li>
-				</ul>
+					<div class="mobile-menu" id="mobile-menu" data-menu>
+						<nav class="navigation navigation--margin-left">
+							<ul class="nav-menu">
+								<li class="nav-menu__item">
+									<a class="nav-menu__link" href="./index.html">Студія</a>
+								</li>
+								<li class="nav-menu__item">
+									<a class="nav-menu__link nav-menu__link--active" href="./portfolio.html">
+										Портфоліо
+									</a>
+								</li>
+								<li class="nav-menu__item">
+									<a class="nav-menu__link" href="#contacts">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+
+						<ul class="address-menu list">
+							<li class="address-menu__item">
+								<a class="address-menu__link" href="mailto:info@devstudio.com" aria-label="e-mail">
+									<svg class="icon-letter" width="16" height="12">
+										<use href="./images/icons.svg#icon-letter"></use>
+									</svg>
+									info@devstudio.com
+								</a>
+							</li>
+							<li class="address-menu__item">
+								<a
+									class="address-menu__link mobile-activ"
+									href="tel:+380961111111"
+									aria-label="phone number"
+								>
+									<svg class="icon-phone" width="10" height="16">
+										<use href="./images/icons.svg#icon-smartphone"></use>
+									</svg>
+									+38 096 111 11 11
+								</a>
+							</li>
+						</ul>
+
+						<ul class="mobile-social">
+							<li class="mobile-social__item">
+								<a
+									href="https://www.instagram.com/"
+									target="_blank"
+									rel="noopener norefferer"
+									class="mobile-social__link"
+									aria-label="instagram"
+								>
+									Instagram
+								</a>
+							</li>
+							<li class="mobile-social__item">
+								<a
+									href="https://twitter.com/"
+									target="_blank"
+									rel="noopener norefferer"
+									aria-label="twitter"
+									class="mobile-social__link"
+								>
+									Twitter
+								</a>
+							</li>
+							<li class="mobile-social__item">
+								<a
+									href="https://www.facebook.com/"
+									target="_blank"
+									rel="noopener norefferer"
+									aria-label="facebook"
+									class="mobile-social__link"
+								>
+									Facebook
+								</a>
+							</li>
+							<li class="mobile-social__item">
+								<a
+									href="https://www.linkedin.com/"
+									target="_blank"
+									rel="noopener norefferer"
+									aria-label="linkedin"
+									class="mobile-social__link"
+								>
+									LinkedIn
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</header>
 
@@ -325,8 +388,7 @@
 			<div class="container container--flex-baseline">
 				<div class="footer__wrp">
 					<a class="footer__logo logo" lang="en" href="./index.html">
-						Web
-						<span class="logo--mode-dark">Studio</span>
+						Web<span class="logo--mode-dark">Studio</span>
 					</a>
 					<address id="contacts">
 						<a
@@ -418,5 +480,6 @@
 				</form>
 			</div>
 		</footer>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>

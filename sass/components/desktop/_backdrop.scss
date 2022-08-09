@@ -9,7 +9,7 @@
 	background-color: $backdrop-bg-color;
 	opacity: 1;
 	transition: opacity $time-cubic visibility $time-cubic;
-	z-index: 3;
+	z-index: 9999;
 	visibility: visible;
 	@media screen and (max-width: ($tablet - 1px)) {
 		overflow-y: scroll;
