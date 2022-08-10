@@ -1244,8 +1244,9 @@ img {
   opacity: 1;
   z-index: 4;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .modal {
@@ -1254,13 +1255,12 @@ img {
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
-    max-width: 528px;
-    max-height: 581px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 100%;
+    max-width: 528px;
+    max-height: 581px;
   }
 }
 
