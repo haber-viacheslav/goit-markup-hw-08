@@ -50,4 +50,9 @@ img {
 
 .no-user-select {
 	user-select: none;
+	@media screen and (max-width: ($mobile - 0.02px)) {
+		font-size: 10px;
+		
+	}
 }
+

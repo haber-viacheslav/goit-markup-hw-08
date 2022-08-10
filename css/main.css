@@ -313,6 +313,11 @@ img {
       -ms-user-select: none;
           user-select: none;
 }
+@media screen and (max-width: 479.98px) {
+  .no-user-select {
+    font-size: 10px;
+  }
+}
 
 /* Wrappers */
 .section {
@@ -578,7 +583,7 @@ img {
 @media screen and (max-width: 767.98px) {
   .mobile-menu {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -799,13 +804,21 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+.mobile-activ {
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+@media screen and (max-width: 479.98px) {
   .mobile-activ {
     color: #2196f3;
-    font-weight: 500;
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
+  .mobile-activ {
+    color: #2196f3;
     font-size: 34px;
-    line-height: 1.18;
-    letter-spacing: 0.02em;
   }
 }
 
@@ -1126,27 +1139,32 @@ img {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
-    background-image: url(../images/background/hero-bg_sm@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/hero-bg_sm@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/hero-bg_sm@2x.jpg);
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767.98px) {
   .overlay {
-    background-image: url(../images/background/hero-bg_md.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/hero-bg_md.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/hero-bg_md.jpg);
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 767.98px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: url(../images/background/hero-bg_md@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/hero-bg_md@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/hero-bg_md@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .overlay {
-    background-image: url(../images/background/hero-bg_lg.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/hero-bg_lg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/hero-bg_lg.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: url(../images/background/hero-bg_lg@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/hero-bg_lg@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/hero-bg_lg@2x.jpg);
   }
 }
 
@@ -1229,8 +1247,12 @@ img {
 
 /* Modal */
 .modal {
-  position: relative;
-  max-width: 450px;
+  position: absolute;
+  top: 93px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 95vw;
   max-height: 609px;
   padding: 40px;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1243,10 +1265,12 @@ img {
   border-radius: 4px;
   opacity: 1;
   z-index: 4;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 100%;
+}
+@media screen and (min-width: 479.98px) {
+  .modal {
+    max-width: 450px;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .modal {
@@ -1313,6 +1337,7 @@ img {
 }
 
 .modal-form__contact-head {
+  display: block;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -1495,6 +1520,7 @@ img {
   background-size: contain;
   background-origin: border-box;
   background-position: center;
+  background-repeat: repeat;
 }
 
 .modal-form__policy-link {
@@ -1508,9 +1534,14 @@ img {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 479.98px) {
+  .modal-form__policy-link {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal-form__policy-link {
@@ -1609,6 +1640,11 @@ img {
   text-transform: uppercase;
   color: #212121;
   letter-spacing: 0.03em;
+}
+@media screen and (max-width: 767.98px) {
+  .peculiarities__title {
+    text-align: center;
+  }
 }
 
 .peculiarities__descr {
@@ -1856,7 +1892,7 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 30px;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -1869,13 +1905,28 @@ img {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }
+@media screen and (min-width: 479.98px) {
+  .work-list__overlay {
+    padding: 49px 24px;
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .work-list__overlay {
+    padding: 63px 24px;
+  }
+}
 
 .work-list__overlay-desc {
   font-weight: 400;
-  font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: #ffffff;
+  font-size: 14px;
+}
+@media screen and (min-width: 479.98px) {
+  .work-list__overlay-desc {
+    font-size: 18px;
+  }
 }
 
 /* Changed to gap */

@@ -97,7 +97,7 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	padding: 63px 24px;
+	padding: 30px;
 	background-color: $overlay-bg-color;
 	transform: translateY(0);
 	transition: transform $time-cubic;
@@ -106,14 +106,28 @@
 	.work-list__link:focus & {
 		transform: translateY(-100%);
 	}
+	@media screen and (min-width: ($mobile - 0.02px)) {
+		padding: 49px 24px;
+	}
+	@media screen and (min-width: ($desktop - 0.02px)) {
+		padding: 63px 24px;
+	}
+
 }
 
 .work-list__overlay-desc {
 	font-weight: 400;
-	font-size: 18px;
 	line-height: 1.55;
 	letter-spacing: 0.03em;
 	color: $prime-white;
+	font-size: 14px;
+	@media screen and (min-width: ($mobile - 0.02px)) {
+		font-size: 18px;
+		
+	}
+	
+	
+	
 }
 /* Changed to gap */
 /* .work-card:not(:nth-child(3n)) {

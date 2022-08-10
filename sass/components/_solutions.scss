@@ -24,28 +24,28 @@
 	@media (min-device-pixel-ratio: 2),
 		(min-resolution: 192dpi),
 		(min-resolution: 2dppx) {
-		background-image: url(../images/background/hero-bg_sm@2x.jpg);
+		background-image: $hero-gradient, url(../images/background/hero-bg_sm@2x.jpg);
 	}
 
 	@media screen and (min-width: $mobile) and (max-width: ($tablet - 0.02px)) {
-		background-image: url(../images/background/hero-bg_md.jpg);
+		background-image: $hero-gradient, url(../images/background/hero-bg_md.jpg);
 
 		// Для ретіна екранів планшетна версія
 		@media (min-device-pixel-ratio: 2),
 			(min-resolution: 192dpi),
 			(min-resolution: 2dppx) {
-			background-image: url(../images/background/hero-bg_md@2x.jpg);
+			background-image: $hero-gradient, url(../images/background/hero-bg_md@2x.jpg);
 		}
 	}
 
 	@media screen and (min-width: $tablet) {
-		background-image: url(../images/background/hero-bg_lg.jpg);
+		background-image: $hero-gradient, url(../images/background/hero-bg_lg.jpg);
 
 		// Для ретіна екранів десктопна версія
 		@media (min-device-pixel-ratio: 2),
 			(min-resolution: 192dpi),
 			(min-resolution: 2dppx) {
-			background-image: url(../images/background/hero-bg_lg@2x.jpg);
+			background-image: $hero-gradient, url(../images/background/hero-bg_lg@2x.jpg);
 		}
 	}
 

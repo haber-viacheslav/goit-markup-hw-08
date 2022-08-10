@@ -1,8 +1,11 @@
 /* Modal */
 
 .modal {
-	position: relative;
-	max-width: 450px;
+	position:absolute;
+	top: 93px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 95vw;
 	max-height: 609px;
 	padding: 40px;
 	transition: transform $time-cubic, opacity $time-cubic;
@@ -11,9 +14,12 @@
 	border-radius: 4px;
 	opacity: 1;
 	z-index: 4;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 100%;
+	
+
+	@media screen and (min-width: ($mobile - 0.02px)) {
+		max-width: 450px;
+		width: 100%;
+	}
 
 	@media screen and (min-width: $tablet) {
 		position: absolute;
@@ -69,6 +75,7 @@
 }
 
 .modal-form__contact-head {
+	display: block;
 	margin-bottom: 12px;
 	font-weight: 700;
 	font-size: 20px;
@@ -207,6 +214,7 @@
 		background-size: contain;
 		background-origin: border-box;
 		background-position: center;
+		background-repeat: repeat;
 	}
 }
 
@@ -217,9 +225,13 @@
 	display: flex;
 	align-items: center;
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 10px;
 	line-height: 1.16;
 	letter-spacing: 0.03em;
+
+	@media screen and (min-width: ($mobile - 0.02px)) {
+		font-size: 12px;
+	}
 
 	@media screen and (min-width: $desktop) {
 		font-size: 14px;

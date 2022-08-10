@@ -67,7 +67,7 @@
 
 	@media screen and (max-width: ($tablet - 0.02px)) {
 		display: none;
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100vw;
@@ -244,12 +244,18 @@
 }
 
 .mobile-activ {
-	@media screen and (max-width: $tablet) {
+	font-weight: 500;
+	line-height: 1.18;
+	letter-spacing: 0.02em;
+	
+	@media screen and (max-width: ($mobile - 0.02px)) {
 		color: $active-color;
-		font-weight: 500;
+		font-size: 23px;
+	}
+	@media screen and (min-width: $mobile) and (max-width: ($tablet - 0.02px)) {
+		color: $active-color;
 		font-size: 34px;
-		line-height: 1.18;
-		letter-spacing: 0.02em;
+		
 	}
 }
 
