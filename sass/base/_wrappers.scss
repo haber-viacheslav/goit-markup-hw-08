@@ -46,7 +46,7 @@
 	gap: 60px;
 	align-items: center;
 
-	@media screen and (min-width: $tablet) and (max-width: ($desktop - 0.01px)) {
+	@media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02px)) {
 		flex-direction: row;
 		justify-content: space-around;
 		flex-wrap: wrap;
@@ -62,7 +62,7 @@
 }
 
 .container-mobile {
-	@media screen and (max-width: ($tablet - 0.01px)) {
+	@media screen and (max-width: ($tablet - 0.02px)) {
 		min-height: 60px;
 		display: flex;
 		justify-content: space-between;

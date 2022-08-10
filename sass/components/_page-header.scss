@@ -65,7 +65,7 @@
 	
 	}
 
-	@media screen and (max-width: ($tablet - 0.1px)) {
+	@media screen and (max-width: ($tablet - 0.02px)) {
 		display: none;
 		position: absolute;
 		top: 0;
@@ -110,14 +110,14 @@
 .address-menu {
 	@extend %list;
 	display: flex;
-	@media screen and (max-width: ($tablet - 1px)) {
+	@media screen and (max-width: ($tablet - 0.02px)) {
 		flex-direction: column-reverse;
 		align-items: flex-start;
 		gap: 32px;
 		margin-top: auto;
 	}
 
-	@media screen and (min-width: $tablet) and (max-width: ($desktop - 1)) {
+	@media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02px)) {
 		flex-direction: column;
 		gap: 10px;
 		font-weight: 500;
@@ -244,7 +244,7 @@
 }
 
 .mobile-activ {
-	@media screen and (max-width: ($tablet - 1px)) {
+	@media screen and (max-width: $tablet) {
 		color: $active-color;
 		font-weight: 500;
 		font-size: 34px;
@@ -256,7 +256,7 @@
 .mobile-social {
 	display: none;
 
-	@media screen and (max-width: ($tablet - 1px)) {
+	@media screen and (max-width: ($tablet - 0.02px)) {
 		display: flex;
 		margin-top: 64px;
 	}
@@ -280,22 +280,15 @@
 .mobile-social__link {
 	@extend %link;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 12px;
 	line-height: 1.22;
 	letter-spacing: 0.02em;
 	color: #2196f3;
 
-	// &:last-child::after {
-	// 	display: none;
-	// }
-	// &::after {
-	// 	right: 0px;
-	// 	bottom: 0px;
-	// 	display: block;
-	// 	content: "";
-	// 	position: absolute;
-	// 	height: 100%;
-	// 	width: 1px;
-	// 	background-color: $mobile-social;
-	// }
+	@media screen and (min-width: ($mobile - 0.02px)) {
+		font-size: 18px;
+		line-height: 1.22;
+	}   
 }
+
+

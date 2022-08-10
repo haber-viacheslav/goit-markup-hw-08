@@ -27,7 +27,7 @@
 		background-image: url(../images/background/hero-bg_sm@2x.jpg);
 	}
 
-	@media screen and (min-width: $mobile) and (max-width: ($tablet - 1px)) {
+	@media screen and (min-width: $mobile) and (max-width: ($tablet - 0.02px)) {
 		background-image: url(../images/background/hero-bg_md.jpg);
 
 		// Для ретіна екранів планшетна версія

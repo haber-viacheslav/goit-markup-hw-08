@@ -11,7 +11,7 @@
 	transition: opacity $time-cubic visibility $time-cubic;
 	z-index: 9999;
 	visibility: visible;
-	@media screen and (max-width: ($tablet - 1px)) {
+	@media screen and (max-width: ($tablet - 0.02px)) {
 		overflow-y: scroll;
 		padding: 93px 15px;
 	}
