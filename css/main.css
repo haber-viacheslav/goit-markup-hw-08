@@ -562,6 +562,10 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mobile-btn.is-open {
+  position: fixed;
+}
+
 .mobile-btn:hover, .mobile-btn:focus {
   color: #2196f3;
 }
@@ -588,10 +592,6 @@ img {
 
 .mobile-btn.is-open .mobile-btn__icon-close {
   display: block;
-}
-
-.mobile-btn.is-fixed {
-  position: fixed;
 }
 
 .mobile-menu {

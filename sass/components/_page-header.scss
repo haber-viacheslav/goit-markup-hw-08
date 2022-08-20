@@ -18,6 +18,11 @@
 	border: none;
 	z-index: 8000;
 	transition: color $time-cubic;
+	&.is-open {
+		position: fixed;
+	}
+
+
 
 	&:hover, &:focus {
 		color: $active-color;
@@ -46,11 +51,17 @@
 			
 		}
 	}
+
+	
 }
 
-.mobile-btn.is-fixed {
-	position: fixed;
-}
+// .mobile-menu.is-open .mobile-btn {
+// 	position: fixed;
+// }
+
+// .mobile-btn.is-fixed {
+// 	position: fixed;
+// }
 
 .mobile-menu {
 	padding: 48px 40px;
