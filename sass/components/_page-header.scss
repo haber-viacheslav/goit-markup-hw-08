@@ -18,8 +18,13 @@
 	border: none;
 	z-index: 8000;
 	transition: color $time-cubic;
+	color: $pure-black;
+	&.is-open {
+		position: fixed;
+	}
 
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		color: $active-color;
 	}
 
@@ -39,11 +44,9 @@
 	&__icon-close {
 		display: none;
 		fill: currentColor;
-		
 
 		.mobile-btn.is-open & {
 			display: block;
-			
 		}
 	}
 }
@@ -62,7 +65,6 @@
 		align-items: flex-start;
 		transform: translateY(0);
 		opacity: 1;
-	
 	}
 
 	@media screen and (max-width: ($tablet - 0.02px)) {
@@ -138,7 +140,7 @@
 	}
 }
 
-/* Methods for selecting elements for cleaning extreme geometry */
+/* Methods selecting elements for cleaning extreme geometry */
 /*  */
 
 .nav-menu__item:not(:last-child) {
@@ -247,7 +249,7 @@
 	font-weight: 500;
 	line-height: 1.18;
 	letter-spacing: 0.02em;
-	
+
 	@media screen and (max-width: ($mobile - 0.02px)) {
 		color: $active-color;
 		font-size: 23px;
@@ -255,7 +257,6 @@
 	@media screen and (min-width: $mobile) and (max-width: ($tablet - 0.02px)) {
 		color: $active-color;
 		font-size: 34px;
-		
 	}
 }
 
@@ -294,7 +295,5 @@
 	@media screen and (min-width: ($mobile - 0.02px)) {
 		font-size: 18px;
 		line-height: 1.22;
-	}   
+	}
 }
-
-
